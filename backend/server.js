@@ -10,8 +10,8 @@ import orderRouter from './routes/orderRoute.js'
 //import {router} from 'router'
 
 const app = express()
-
-app.use(cors())
+app.use(cors({origin:"https://kuhuecom-s1wk-git-main-kuhu-khandelwal-s-projects.vercel.app/"}));
+//app.use(cors())
 const router = express.Router();
 router.options("/", (req, res) => {
   res.setHeader("Access-Control-Allow-Origin")
