@@ -1,11 +1,11 @@
-
 {
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination":'https://kuhuecom.vercel.app/',
+      "destination": "https://kuhuecom.vercel.app/"
     }
   ]
 }
+
 
   
