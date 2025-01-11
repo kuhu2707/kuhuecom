@@ -31,7 +31,7 @@ export default defineConfig({
     server: {
         proxy: {
             '/api': {
-                target: 'https://ecommerce-webiste-939r.vercel.app',
+                target:'https://kuhuecom.vercel.app/',
                 changeOrigin: true,
                 secure: false,
             },
