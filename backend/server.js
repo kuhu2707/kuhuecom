@@ -10,7 +10,7 @@ import orderRouter from './routes/orderRoute.js'
 //import {router} from 'router'
 
 const app = express()
-//app.use(cors({origin:"https://ecomf3.onrender.com"}));
+
 app.use(cors())
 const router = express.Router();
 router.options("/", (req, res) => {
