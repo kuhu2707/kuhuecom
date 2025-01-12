@@ -10,7 +10,7 @@ import orderRouter from './routes/orderRoute.js'
 //import {router} from 'router'
 
 const app = express()
-app.use(cors({origin:"https://kuhuecom-s1wk-git-main-kuhu-khandelwal-s-projects.vercel.app/"}));
+app.use(cors({origin:"https://kuhuecom-jzm1.vercel.app/"}));
 //app.use(cors())
 const router = express.Router();
 router.options("/", (req, res) => {
