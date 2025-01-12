@@ -17,7 +17,7 @@ const Orders = () => {
       if (!token) {
         return null
       }
-      const response = await axios.post('https://ecom-b1.vercel.app/api/order/userorders' , {} , {headers:{token}})
+      const response = await axios.post('https://kuhuecom.vercel.app/api/order/userorders' , {} , {headers:{token}})
        
       if(response.data.success){
         const allOrdersItem = []
