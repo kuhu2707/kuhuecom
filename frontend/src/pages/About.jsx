@@ -15,11 +15,13 @@ const About = () => {
     <div className='my-10 flex flex-col md:flex-row gap-16'>
        <img className='w-full md:max-w-[450px]' src={assets.about_img} alt="" />
        <div className='flex flex-col justify-center gap-6 md:w-2/4 text-gray-600'>
-         <p>"Forever" is a popular name associated with several e-commerce websites, but most commonly, it refers to Forever 21, an American fast-fashion retailer. Forever 21 operates both online and through physical stores worldwide, offering a wide range of fashion items, including clothing, accessories, and beauty products. s to various locations.</p>
-         <p>An e-commerce website enables businesses to sell products or services online. It features a user-friendly interface, secure payment gateways, and product catalogs. Shoppers can browse, add items to a cart, and make purchases. streamline buying and selling, </p>
+       <p>Welcome to Pahanaava, your one-stop destination for trendy, high-quality apparel that combines comfort and style. At Pahanaava, we believe clothing is more than just a necessity – it’s a way to express yourself and make a statement.</p>
+
+<p>Our collection is thoughtfully curated to bring you the latest designs, from cozy hoodies and everyday essentials to statement pieces that define your unique personality. We prioritize premium materials, ensuring every product is durable, sustainable, and feels great to wear.</p>
          <b className='text-gray-800'>Our Mission</b>
-         <p>User-Friendly Interface: The site is designed to be intuitive, with easy navigation through categories such as Women, Men, Kids, Accessories, and Sale.
-              Fast-Fashion Inventory: Known for constantly updating collections, .</p>
+         <p>At Pahanaava, our mission is to redefine personal expression through customizable hoodies. We aim to provide a platform where creativity meets comfort, offering customers the freedom to design hoodies that reflect their individuality and style.
+
+We are committed to delivering high-quality materials, precise craftsmanship, and a seamless customization experience. Whether it’s for casual wear, special occasions, or as a meaningful gift, Pahanaava empowers you to create something truly unique .</p>
        </div>
     </div>
 
