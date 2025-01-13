@@ -85,14 +85,9 @@ const Product = () => {
              <p className='border px-5 py-3 text-sm'>Reviews (122)</p>
          </div>
          <div className='flex flex-col gap-4 border px-6 py-6 text-sm text-gray-500'>
-             <p>An e-commerce website is an online platform where businesses sell goods and services directly to consumers.
-             It facilitates transactions through secure payment gateways, offers product listings, and often includes features like shopping carts and user reviews.
-              E-commerce websites enhance convenience, allowing customers to shop anytime and anywhere.
-             </p>
-             <p>
-             E-commerce sites often include features such as shopping carts, secure payment gateways, and user accounts to enhance the shopping experience. They can range from large marketplaces like Amazon to smaller, niche online stores.
-            With the growth of online shopping, e-commerce websites have become essential for retailers to reach a broader audience and streamline their sales processes.
-             </p>
+             <p>Welcome to Pahanaava, your one-stop destination for trendy, high-quality apparel that combines comfort and style. At Pahanaava, we believe clothing is more than just a necessity – it’s a way to express yourself and make a statement.</p>
+
+<p>Our collection is thoughtfully curated to bring you the latest designs, from cozy hoodies and everyday essentials to statement pieces that define your unique personality. We prioritize premium materials, ensuring every product is durable, sustainable, and feels great to wear.</p>
          </div> 
        </div>
 
