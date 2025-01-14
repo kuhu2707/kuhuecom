@@ -10,16 +10,27 @@ import orderRouter from './routes/orderRoute.js'
 //import {router} from 'router'
 
 const app = express()
-app.use(cors({origin:"https://kuhuecom-3rmc.vercel.app/"}));
-//app.use(cors())
-const router = express.Router();
-router.options("/", (req, res) => {
-  res.setHeader("Access-Control-Allow-Origin")
-  res.setHeader("Access-Control-Allow-Credentials", "true");
-  res.setHeader("Access-Control-Max-Age", "1800");
-  res.setHeader("Access-Control-Allow-Headers", "content-type");
-  res.setHeader( "Access-Control-Allow-Methods", "PUT, POST, GET, DELETE, PATCH, OPTIONS" ); 
-   });
+const allowedOrigins = ['https://kuhuecom.vercel.app', 'https://kuhuecom-3rmc.vercel.app'];
+app.use(cors({
+  origin: function (origin, callback) {
+    if (allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+}));
+
+// app.use(cors({origin:"https://kuhuecom-3rmc.vercel.app/"}));
+// //app.use(cors())
+// const router = express.Router();
+// router.options("/", (req, res) => {
+//   res.setHeader("Access-Control-Allow-Origin")
+//   res.setHeader("Access-Control-Allow-Credentials", "true");
+//   res.setHeader("Access-Control-Max-Age", "1800");
+//   res.setHeader("Access-Control-Allow-Headers", "content-type");
+//   res.setHeader( "Access-Control-Allow-Methods", "PUT, POST, GET, DELETE, PATCH, OPTIONS" ); 
+//    });
 
 
 
