@@ -13,7 +13,7 @@ const app = express()
 app.use(cors())
 // const router = express.Router();
 // router.options("/", (req, res) => {
-//   res.setHeader("Access-Control-Allow-Origin", "https://ecomf-ecru.vercel.app/")
+//   res.setHeader("Access-Control-Allow-Origin");
 //   res.setHeader("Access-Control-Allow-Credentials", "true");
 //   res.setHeader("Access-Control-Max-Age", "1800");
 //   res.setHeader("Access-Control-Allow-Headers", "content-type");
@@ -24,7 +24,7 @@ app.use(cors())
 //     origin: 'https://ecomf-ecru.vercel.app/', // Replace with your frontend's URL when deployed
 //     credentials: true, // Allow cookies or authorization headers
 // }));
-// app.use(cors({origin:"https://ecomf3.onrender.com"}));
+//app.use(cors({origin:"https://kuhuecom.vercel.app/"}));
 //  app.
 // app config
 
