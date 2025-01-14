@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run generate-html",
+    "build": "vite build",
     "lint": "eslint .",
-    "generate-html": "mkdir -p dist && cp index.html dist/",
     "preview": "vite preview"
   },
   "dependencies": {
