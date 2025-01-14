@@ -92,7 +92,7 @@ const ShopContextProvider = (props) => {
 
     const getProductsData = async () => {
         try {
-            const response = await axios.get('https://ecom-b1.vercel.app/api/product/list');
+            const response = await axios.get('https://kuhuecom.vercel.app/api/product/list');
             console.log(response.data);
 
             if (response.data.success) {
