@@ -10,7 +10,7 @@ import orderRouter from './routes/orderRoute.js'
 //import {router} from 'router'
 
 const app = express()
-const allowedOrigins = ['http://localhost:5173/','https://kuhuecom.vercel.app', 'https://kuhuecom-3rmc.vercel.app','https://kuhuecomfr.onrender.com'];
+const allowedOrigins = ['http://localhost:5173','http://localhost:5174','https://kuhuecomfr.onrender.com','http://localhost:5175','https://kuhuecom.onrender.com'];
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.indexOf(origin)!== -1) {
