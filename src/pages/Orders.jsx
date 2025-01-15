@@ -17,7 +17,7 @@ const Orders = ({ token }) => {
 
     try {
 
-      const response = await axios.post('http://localhost:4000/api/order/list', {}, { headers: { token } })
+      const response = await axios.post('https://kuhuecom.onrender.com/api/order/list', {}, { headers: { token } })
       if (response.data.success) {
         setOrders(response.data.orders)
       } else {
@@ -33,7 +33,7 @@ const Orders = ({ token }) => {
 
   const statusHandler = async(event , orderId)=>{
           try {
-            const response = await axios.post('http://localhost:4000/api/order/status',{orderId,status:event.target.value},{headers:{token}})
+            const response = await axios.post('https://kuhuecom.onrender.com/api/order/status',{orderId,status:event.target.value},{headers:{token}})
             if (response.data.success) {
               await fetchAllOrders()
             }
