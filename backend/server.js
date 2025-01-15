@@ -13,24 +13,26 @@ const app = express()
 const allowedOrigins = ['https://kuhuecom.vercel.app', 'https://kuhuecom-3rmc.vercel.app','https://kuhuecomfr.onrender.com'];
 app.use(cors({
   origin: function (origin, callback) {
-    if (allowedOrigins.includes(origin)) {
+    if (!origin || allowedOrigins.indexOf(origin)!== -1) {
       callback(null, true);
     } else {
       callback(new Error('Not allowed by CORS'));
     }
-  }
+  },
+  methods:['GET' , 'POST' , 'PUT' , 'DELETE'],
+   credentials:true;
 }));
 
 // app.use(cors({origin:"https://kuhuecom-3rmc.vercel.app/"}));
 // //app.use(cors())
-const router = express.Router();
-router.options("/", (req, res) => {
-  res.setHeader("Access-Control-Allow-Origin")
-  res.setHeader("Access-Control-Allow-Credentials", "true");
-  res.setHeader("Access-Control-Max-Age", "1800");
-  res.setHeader("Access-Control-Allow-Headers", "content-type");
-  res.setHeader( "Access-Control-Allow-Methods", "PUT, POST, GET, DELETE, PATCH, OPTIONS" ); 
-   });
+// const router = express.Router();
+// router.options("/", (req, res) => {
+//   res.setHeader("Access-Control-Allow-Origin")
+//   res.setHeader("Access-Control-Allow-Credentials", "true");
+//   res.setHeader("Access-Control-Max-Age", "1800");
+//   res.setHeader("Access-Control-Allow-Headers", "content-type");
+//   res.setHeader( "Access-Control-Allow-Methods", "PUT, POST, GET, DELETE, PATCH, OPTIONS" ); 
+//    });
 
 
 
