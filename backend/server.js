@@ -23,18 +23,6 @@ app.use(cors({
    credentials:true,
 }));
 
-// app.use(cors({origin:"https://kuhuecom-3rmc.vercel.app/"}));
-// //app.use(cors())
-// const router = express.Router();
-// router.options("/", (req, res) => {
-//   res.setHeader("Access-Control-Allow-Origin")
-//   res.setHeader("Access-Control-Allow-Credentials", "true");
-//   res.setHeader("Access-Control-Max-Age", "1800");
-//   res.setHeader("Access-Control-Allow-Headers", "content-type");
-//   res.setHeader( "Access-Control-Allow-Methods", "PUT, POST, GET, DELETE, PATCH, OPTIONS" ); 
-//    });
-
-
 
 const port = process.env.PORT || 4000
 connectDB()
