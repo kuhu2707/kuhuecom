@@ -10,7 +10,7 @@ import orderRouter from './routes/orderRoute.js'
 //import {router} from 'router'
 
 const app = express()
-const allowedOrigins = ['https://kuhuecom.vercel.app/', 'https://kuhuecom-3rmc.vercel.app/'];
+const allowedOrigins = ['https://kuhuecom.vercel.app', 'https://kuhuecom-3rmc.vercel.app/'];
 app.use(cors({
   origin: function (origin, callback) {
     if (allowedOrigins.includes(origin)) {
