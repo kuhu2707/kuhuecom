@@ -10,23 +10,19 @@ import orderRouter from './routes/orderRoute.js'
 //import {router} from 'router'
 
 const app = express()
-app.use(cors())
-// const router = express.Router();
-// router.options("/", (req, res) => {
-//   res.setHeader("Access-Control-Allow-Origin");
-//   res.setHeader("Access-Control-Allow-Credentials", "true");
-//   res.setHeader("Access-Control-Max-Age", "1800");
-//   res.setHeader("Access-Control-Allow-Headers", "content-type");
-//   res.setHeader( "Access-Control-Allow-Methods", "PUT, POST, GET, DELETE, PATCH, OPTIONS" ); 
-//    });
+const allowedOrigins = ['http://localhost:5173/','https://kuhuecom.vercel.app', 'https://kuhuecom-3rmc.vercel.app','https://kuhuecomfr.onrender.com'];
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.indexOf(origin)!== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  methods:['GET' , 'POST' , 'PUT' , 'DELETE'],
+   credentials:true,
+}));
 
-//    app.use(cors({
-//     origin: 'https://ecomf-ecru.vercel.app/', // Replace with your frontend's URL when deployed
-//     credentials: true, // Allow cookies or authorization headers
-// }));
-//app.use(cors({origin:"https://kuhuecom.vercel.app/"}));
-//  app.
-// app config
 
 const port = process.env.PORT || 4000
 connectDB()
@@ -52,4 +48,3 @@ const server = app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 server.setTimeout(300000); // 5 minutes
-
