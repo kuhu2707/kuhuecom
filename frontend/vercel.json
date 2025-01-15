@@ -1,7 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/(.*)", "destination": "https://kuhuecom.vercel.app/" }
-  ]
-}
-
-  
