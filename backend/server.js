@@ -20,7 +20,7 @@ app.use(cors({
     }
   },
   methods:['GET' , 'POST' , 'PUT' , 'DELETE'],
-   credentials:true;
+   credentials:true,
 }));
 
 // app.use(cors({origin:"https://kuhuecom-3rmc.vercel.app/"}));
