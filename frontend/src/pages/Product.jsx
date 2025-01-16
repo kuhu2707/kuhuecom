@@ -50,11 +50,11 @@ const Product = () => {
           <div className='flex-1'>
             <h1 className='font-medium text-2xl mt-2'>{productData.name}</h1>
             <div className='flex item-center gap-1 mt-2'>
-                  <img className='w-3 5' src={assets.star_icon} alt="" />
-                  <img className='w-3 5' src={assets.star_icon} alt="" />
-                  <img className='w-3 5' src={assets.star_icon} alt="" />
-                  <img className='w-3 5' src={assets.star_icon} alt="" />
-                  <img className='w-3 5' src={assets.star_dull_icon} alt="" />
+                  <img className='w-5 5' src={assets.star_icon} alt="" />
+                  <img className='w-5 5' src={assets.star_icon} alt="" />
+                  <img className='w-5 5' src={assets.star_icon} alt="" />
+                  <img className='w-5 5' src={assets.star_icon} alt="" />
+                  <img className='w-5 5' src={assets.star_dull_icon} alt="" />
                   <p className='pl-2'>(122)</p>
             </div>
             <p className='mt-5 text-3xl font-medium'>{currency}{productData.price}</p>
