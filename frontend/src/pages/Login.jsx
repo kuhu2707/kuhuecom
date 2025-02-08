@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import axios from 'axios'
 import { toast } from 'react-toastify'
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
@@ -11,7 +12,7 @@ const Login = () => {
    const [ name , setName] =useState('')
    const [ email , setEmail] = useState('')
    const [password , setPassword] = useState('')
-
+   const navigateTo = useNavigate();
 
    const onSubmitHandler = async(event)=>{
     event.preventDefault();
@@ -68,7 +69,7 @@ const Login = () => {
       <input onChange={(e)=>setEmail(e.target.value)} value={email} type="email" className='w-full px-3 py-2 border border-gray-800' placeholder='Email' required />
       <input onChange={(e)=>setPassword(e.target.value)} value={password} type="Password" className='w-full px-3 py-2 border border-gray-800' placeholder='Password'required />
       <div className='w-full flex justify-between text-sm mt-[-8px]'>
-         <p className='cursor-pointer'>Forgot your password?</p>
+          <p className='cursor-pointer' onClick={()=> navigateTo('/forgot-password')}>Forgot your password?</p>
          {
           currentState === 'Login'
           ? <p onClick={()=>setCurrentState('Sign Up')} className='cursor-pointer'>Create account</p>
