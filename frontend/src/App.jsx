@@ -1,4 +1,4 @@
-import React from 'react'
+//import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Collection from './pages/Collection'
@@ -15,6 +15,7 @@ import SearchBar from './components/SearchBar'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Verify from './pages/Verify'
+import ForgotPassword from './pages/ForgotPassword'
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='/product/:productId' element={<Product />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/forgot-password' element={<ForgotPassword/>} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/place-order' element={<PlaceOrder />} />
         <Route path='/order' element={<Orders />} />
